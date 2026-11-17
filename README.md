@@ -39,13 +39,13 @@ Este repositorio es mi bitácora de aprendizaje del curso Full Stack. Aquí regi
 - Tema: Estructura de un documento HTML
 
 ### Lo que aprendí
-
+- Realizar la estructura semántica de una página web.
 
 ### Código o ejercicios
-- [Nombre del ejercicio](./ejercicio.html)
+- [Nombre del ejercicio](./index.html)
 
 ### Dudas pendientes
-- Pregunta que quiero resolver: 
+- Pregunta que quiero resolver: Ninguna.
 
 ## Día 2
 
