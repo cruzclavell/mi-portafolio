@@ -42,7 +42,7 @@ Este repositorio es mi bitácora de aprendizaje del curso Full Stack. Aquí regi
 - Realizar la estructura semántica de una página web.
 
 ### Código o ejercicios
-- [Nombre del ejercicio](./index.html)
+- [Creación de pagina](index.html)
 
 ### Dudas pendientes
 - Pregunta que quiero resolver: Ninguna.
@@ -51,25 +51,67 @@ Este repositorio es mi bitácora de aprendizaje del curso Full Stack. Aquí regi
 
 <!-- Día 2: misma estructura que el Día 1, para que tu bitácora se mantenga ordenada. -->
 
-**Fecha:** DD/MM/AAAA
+**Fecha:** 17/11/2026
 
 ### Temas vistos
--
+- Organizacion de pagina web
+- jerarquía de encabezados
+- 
 
 ### Lo que aprendí
--
+- La estructura de las páginas, la jerarquía de cada etiqueta.
 
 ### Código o ejercicios
--
+- [Estructura de index](index.html)
 
 ### Dudas pendientes
--
+- Ninguna
 
 ## Día 3
 
 <!-- Día 3: copia y pega este bloque para cada nueva clase y cambia el número. -->
 
-**Fecha:** DD/MM/AAAA
+**Fecha:** 18/11/2026
+
+### Temas vistos
+- Rutas relativas y absolutas
+- Listas
+- imagenes
+- tablas
+
+### Lo que aprendí
+- El poder redirigir hacia otros sitios web u otras paginas de mi mismo proyecto
+- la estructura de las listas y como ponerle un indice diferente
+
+### Código o ejercicios
+- [creacion de tabla](proyectos.html)
+
+### Dudas pendientes
+-Ninguna
+
+<!-- Día 4: copia y pega este bloque para cada nueva clase y cambia el número. -->
+
+**Fecha:** 19/11/2026
+
+### Temas vistos
+- Formularios
+- SEO técnico
+- Validar código
+
+### Lo que aprendí
+- Crear formularios y poder enviarlo por GET y POST, validar que el código no tenga errores.
+
+### Código o ejercicios
+- [creacion de formulario](contacto.html)
+
+### Dudas pendientes
+-
+
+## Recursos útiles
+
+<!-- Día 5: copia y pega este bloque para cada nueva clase y cambia el número. -->
+
+**Fecha:** 20/11/2026
 
 ### Temas vistos
 -
@@ -82,8 +124,6 @@ Este repositorio es mi bitácora de aprendizaje del curso Full Stack. Aquí regi
 
 ### Dudas pendientes
 -
-
-## Recursos útiles
 
 <!-- Recursos útiles: guarda aquí enlaces, videos y documentación que te ayuden a estudiar. -->
 
