@@ -1,0 +1,9 @@
+# Archivo del sistema operativo
+.DS_Store
+Thumbs.db
+
+#Configuracion local del editor
+.vscode/
+
+#variables secretas 
+.env
