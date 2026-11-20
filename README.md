@@ -105,6 +105,7 @@ Este repositorio es mi bitácora de aprendizaje del curso Full Stack. Aquí regi
 
 ### Código o ejercicios
 - [creacion de formulario](contacto.html)
+- [Pagina sobre mi](https://cruzclavell.github.io/mi-portafolio/)
 
 ### Dudas pendientes
 -
