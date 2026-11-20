@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Contactanos | ejemplos de formularios</title>
+    <meta name="description" content="Portafolio de curso full stack, ejemplos de formularios">
 </head>
+
 <body id="inicio">
     <!-- Inicia H1-->
-    <Header>
-        <center><h1>Nombre: Carlos Ernesto Cruz Clavel </h1></center>
+    <Header style="text-align: center;">
+        <h1>Nombre: Carlos Ernesto Cruz Clavel </h1>
         <hr>
         <nav style="text-align: center;">
             <a style="margin-right: 40px;" href="index.html">INICIO</a>
@@ -21,20 +24,56 @@
 
 
 
-        <p>Para mayor información sobre cotizaciones para aplicaciones web para cualquier emprendimiento o proyectos, no dudes en contactarnos ya que nuestros servicios son completamente personalizados solo dejanos un mensaje 
-            para brindarte mas detalles y puedas elegir la mejor opción que se adapte a tu negocio y a tu bolsillo
-        </p>
+    <p>Para mayor información sobre cotizaciones para aplicaciones web para cualquier emprendimiento o proyectos, no
+        dudes en contactarnos ya que nuestros servicios son completamente personalizados solo dejanos un mensaje
+        para brindarte mas detalles y puedas elegir la mejor opción que se adapte a tu negocio y a tu bolsillo
+    </p>
 
-        <ul>
-            <li>Correo electrónico: <a href="mailto:ccruzclavel@gmail.com">ccruzclavel@gmail.com</a></li>
-            <li>Linkedin: <a href="https://sv.linkedin.com/in/carloscruzclavel" target="_blank">Carlos Ernesto Cruz Clavel</a></li>
-            <li>Github: <a href="https://github.com/cruzclavell" target="_blank">CRUZCLAVELL</a></li>
-        </ul>
+    <ul>
+        <li>Correo electrónico: <a href="mailto:ccruzclavel@gmail.com">ccruzclavel@gmail.com</a></li>
+        <li>Linkedin: <a href="https://sv.linkedin.com/in/carloscruzclavel" target="_blank">Carlos Ernesto Cruz
+                Clavel</a></li>
+        <li>Github: <a href="https://github.com/cruzclavell" target="_blank">CRUZCLAVELL</a></li>
+    </ul>
 
-    
+    <form action="/POST" method="get">
+        <fieldset>
+            <legend>Formulario de contacto</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Escriba su nombre completo"
+                maxlength="40">
 
-<footer style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: blueviolet;"><center>© (&copy;),2026,Carlos Ernesto Cruz, Santa Ana</center></footer>
+            <br>
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required placeholder="usario@gmail.com">
+            <br>
+            <label for="asunto"> Asunto</label>
+            <select name="asunto" id="asunto">
+                <option value="1">Oferta de empleo</option>
+                <option value="2">Solicitud de proyecto</option>
+                <option value="3">Otros</option>
+            </select>
+            <br>
+            <label for="comentario">Comentarios</label>
+            <textarea name="comentario" id="comentario" cols="20" rows="5" required></textarea>
+            <br>
+            <input type="checkbox" name="terminos" id="terminos">Acepto los terminos y condiciones
+            <br>
+            <input type="radio" name="tema" id="tema1">Oferta de empleo
+            <input type="radio" name="tema" id="tema2">Solicitud de proyecto
+            <input type="radio" name="tema" id="tema3">Otros
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+
+    <footer style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: blueviolet; text-align: center;">
+        © (&copy;),2026,Carlos Ernesto Cruz, Santa Ana
+    </footer>
 
 
 </body>
+
 </html>
