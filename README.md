@@ -89,6 +89,8 @@ Este repositorio es mi bitácora de aprendizaje del curso Full Stack. Aquí regi
 ### Dudas pendientes
 -Ninguna
 
+## Día 4
+
 <!-- Día 4: copia y pega este bloque para cada nueva clase y cambia el número. -->
 
 **Fecha:** 19/11/2026
@@ -108,6 +110,8 @@ Este repositorio es mi bitácora de aprendizaje del curso Full Stack. Aquí regi
 -
 
 ## Recursos útiles
+
+## Día 5
 
 <!-- Día 5: copia y pega este bloque para cada nueva clase y cambia el número. -->
 
