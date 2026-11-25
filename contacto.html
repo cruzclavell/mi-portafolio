@@ -8,11 +8,20 @@
     <meta name="description" content="Portafolio de curso full stack, ejemplos de formularios">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
 
     <!-- Estilos del sitio-->
     <link rel="stylesheet" href="css/estilos.css">
@@ -20,64 +29,71 @@
 
 <body id="inicio">
     <!-- Inicia H1-->
-    <Header style="text-align: center;">
+    <Header>
         <h1>Nombre: Carlos Ernesto Cruz Clavel </h1>
         <hr>
-        <nav style="text-align: center;">
-            <a style="margin-right: 40px;" href="index.html">INICIO</a> 
-            <a style="margin-right: 40px;" href="proyectos.html">PROYECTOS</a> 
-            <a style="margin-right: 40px;" href="contacto.html">CONTACTO</a>
+        <nav>
+            <button type="button" class="boton" onclick="location.href='index.html'">INICIO</a></button>
+            <button type="button" class="boton" onclick="location.href='proyectos.html'">PROYECTOS</a></button>
+            <button type="button" class="boton" onclick="location.href='contacto.html'">CONTACTANOS</a></button>
         </nav>
         <hr>
     </Header>
     <!--Termina H1 y se agrega un salto de linea-->
 
+    <div class="contenedor">
+        <main>
 
+            <p>Para mayor información sobre cotizaciones para aplicaciones web para cualquier emprendimiento o
+                proyectos, no
+                dudes en contactarnos ya que nuestros servicios son completamente personalizados solo dejanos un mensaje
+                para brindarte mas detalles y puedas elegir la mejor opción que se adapte a tu negocio y a tu bolsillo
+            </p>
 
-    <p>Para mayor información sobre cotizaciones para aplicaciones web para cualquier emprendimiento o proyectos, no
-        dudes en contactarnos ya que nuestros servicios son completamente personalizados solo dejanos un mensaje
-        para brindarte mas detalles y puedas elegir la mejor opción que se adapte a tu negocio y a tu bolsillo
-    </p>
+            <ul>
+                <li>Correo electrónico: <a href="mailto:ccruzclavel@gmail.com">ccruzclavel@gmail.com</a></li>
+                <li>Linkedin: <a href="https://sv.linkedin.com/in/carloscruzclavel" target="_blank">Carlos Ernesto Cruz
+                        Clavel</a></li>
+                <li>Github: <a href="https://github.com/cruzclavell" target="_blank">CRUZCLAVELL</a></li>
+            </ul>
 
-    <ul>
-        <li>Correo electrónico: <a href="mailto:ccruzclavel@gmail.com">ccruzclavel@gmail.com</a></li>
-        <li>Linkedin: <a href="https://sv.linkedin.com/in/carloscruzclavel" target="_blank">Carlos Ernesto Cruz
-                Clavel</a></li>
-        <li>Github: <a href="https://github.com/cruzclavell" target="_blank">CRUZCLAVELL</a></li>
-    </ul>
+            <section class="tarjeta">
+                <form action="/POST" method="get">
+                    <fieldset style="text-align: center;">
+                        <legend class="destacado">Formulario de contacto</legend>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Escriba su nombre completo"
+                            maxlength="40">
 
-    <form action="/POST" method="get">
-        <fieldset style="text-align: center;">
-            <legend class="destacado">Formulario de contacto</legend>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required placeholder="Escriba su nombre completo"
-                maxlength="40">
+                        <br>
 
-            <br>
+                        <label for="correo">Correo:</label>
+                        <input type="email" id="correo" name="correo" required placeholder="usario@gmail.com">
+                        <br>
+                        <label for="asunto"> Asunto</label>
+                        <select name="asunto" id="asunto">
+                            <option value="1">Oferta de empleo</option>
+                            <option value="2">Solicitud de proyecto</option>
+                            <option value="3">Otros</option>
+                        </select>
+                        <br>
+                        <label for="comentario">Comentarios</label>
+                        <textarea name="comentario" id="comentario" cols="20" rows="5" required></textarea>
+                        <br>
+                        <input type="checkbox" name="terminos" id="terminos">Acepto los terminos y condiciones
+                        <br>
+                        <input type="radio" name="tema" id="tema1">Oferta de empleo
+                        <input type="radio" name="tema" id="tema2">Solicitud de proyecto
+                        <input type="radio" name="tema" id="tema3">Otros
+                        <br>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Reset</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
 
-            <label for="correo">Correo:</label>
-            <input type="email" id="correo" name="correo" required placeholder="usario@gmail.com">
-            <br>
-            <label for="asunto"> Asunto</label>
-            <select name="asunto" id="asunto">
-                <option value="1">Oferta de empleo</option>
-                <option value="2">Solicitud de proyecto</option>
-                <option value="3">Otros</option>
-            </select>
-            <br>
-            <label for="comentario">Comentarios</label>
-            <textarea name="comentario" id="comentario" cols="20" rows="5" required></textarea>
-            <br>
-            <input type="checkbox" name="terminos" id="terminos">Acepto los terminos y condiciones
-            <br>
-            <input type="radio" name="tema" id="tema1">Oferta de empleo
-            <input type="radio" name="tema" id="tema2">Solicitud de proyecto
-            <input type="radio" name="tema" id="tema3">Otros
-            <br>
-            <button type="submit">Enviar</button>
-            <button type="reset">Reset</button>
-        </fieldset>
-    </form>
+    </div>
 
     <footer>
         © 2026,Carlos Ernesto Cruz, Santa Ana

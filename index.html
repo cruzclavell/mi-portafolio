@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
 
     <!-- Estilos del sitio-->
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body id="inicio" >
+
+<body id="inicio">
     <!-- Inicia H1-->
     <Header>
         <h1>Nombre: Carlos Ernesto Cruz Clavel </h1>
         <hr>
         <nav>
-            <a style="margin-right: 40px;" href="#inicio">INICIO</a>
-            <a style="margin-right: 40px;" href="proyectos.html">PROYECTOS</a>
-            <a style="margin-right: 40px;" href="contacto.html">CONTACTO</a>
+            <button type="button" class="boton" onclick="location.href='index.html'">INICIO</a></button>
+            <button type="button" class="boton" onclick="location.href='proyectos.html'">PROYECTOS</a></button>
+            <button type="button" class="boton" onclick="location.href='contacto.html'">CONTACTANOS</a></button>
         </nav>
         <hr>
     </Header>
@@ -31,41 +42,51 @@
 
 
     <!-- Inicia main -->
-    <main>
-        <section id="sec1">
-            <h3>Sobre mi</h3>
+    <div class="contenedor">
+        <main>
+            <section class="tarjeta" id="sec1" >
+                <h3>Sobre mi</h3>
                 <figure>
                     <img src="img/perfil.jpg" alt="sobre mi" width="250px" height="250px" loading="lazy">
                     <figcaption>
-                        <p>Soy una persona bastante <em>curiosa</em> me gusta poder conocer cosas nuevas, <strong>para darle alimento a mi mente</strong>. me gusta la programación
-                        ya que son muchas cosas las que se pueden crear desde 0 y de igual forma todos los lenguajes que se pueden aprender como por ejemplo <em class="destacado">C#, JAVA, JAVASCRIPT, C++, PYHTON, PHP, etc.</em> algunos más complejos que otros pero igual de
-                        <em>interesantes</em> ya al conocerlos. Soy una persona sociable y amigable, me gusta el trabajar en equipo y el poder compartir ideas con diferentes personas.</p>
+                        <p>Soy una persona bastante <em>curiosa</em> me gusta poder conocer cosas nuevas, <strong>para
+                                darle alimento a mi mente</strong>. me gusta la programación
+                            ya que son muchas cosas las que se pueden crear desde 0 y de igual forma todos los lenguajes
+                            que se pueden aprender como por ejemplo <em class="destacado">C#, JAVA, JAVASCRIPT, C++,
+                                PYHTON, PHP, etc.</em> algunos más complejos que otros pero igual de
+                            <em>interesantes</em> ya al conocerlos. Soy una persona sociable y amigable, me gusta el
+                            trabajar en equipo y el poder compartir ideas con diferentes personas.
+                        </p>
                     </figcaption>
                 </figure>
-            <br>
-        </section>
-        <section id="sec2">
-            <h3>Mis metas</h3>
-                <article>Mi meta principal es poder obtener la certificación ya que en el mundo laboral actualmente es muy indispensable para poder tener una oportunidad.</article>
-                <article>Y como segunda meta es poder desarrollar por mi cuenta algo funcional y que resuelva la necesidad que tenga alguna empresa o las personas, para asi darme a conocer.</article>
-        </section>
-        <section id="sec3">
-            <h3>Habilidades</h3>
+                <br>
+            </section>
+            <section class="tarjeta" id="sec2">
+                <h3>Mis metas</h3>
+                <article>Mi meta principal es poder obtener la certificación ya que en el mundo laboral actualmente es
+                    muy indispensable para poder tener una oportunidad.</article>
+                <article>Y como segunda meta es poder desarrollar por mi cuenta algo funcional y que resuelva la
+                    necesidad que tenga alguna empresa o las personas, para asi darme a conocer.</article>
+            </section>
+            <section class="tarjeta" id="sec3">
+                <h3>Habilidades</h3>
                 <ul>
                     <li">Atención al cliente</li>
-                    <li>Base de datos</li>
-                    <li>Trabajo en equipo</li>
-                    <li>Desarrollo de software</li>
-                    <li>Organizado</li>
+                        <li>Base de datos</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Desarrollo de software</li>
+                        <li>Organizado</li>
                 </ul>
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
     <!-- termina main -->
-<br>
-<br>
-<br>
-<footer>© 2026,Carlos Ernesto Cruz, Santa Ana</footer>
+    <br>
+    <br>
+    <br>
+    <footer>© 2026,Carlos Ernesto Cruz, Santa Ana</footer>
 
 
 </body>
+
 </html>

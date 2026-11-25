@@ -1,3 +1,8 @@
+    /* Primeras reglas de tu archivo */
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; }
+    img { max-width: 100%; height: auto; }
+    /* Valores abreviados */
 :root {
     /*Paleta del sitio*/
     --primario: #242e7d;
@@ -29,14 +34,10 @@ h1, h2, h3 {
 a {
     color: var(--secundario);
     text-decoration: none;
-    padding: 10px;
 }
 
 a:hover {
-    color: var(--acento2);
     text-decoration: underline;
-    background-color: var(--acento);
-    border-radius: 14px;
 }
 
 .destacado {
@@ -81,4 +82,40 @@ main table {
 
 main table td, main table th {
     border: 1px solid black;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px; /* nunca más ancho que esto */
+    margin: 0 auto; /* centrado horizontal */
+}
+
+.tarjeta{
+    background: #f1f3f3;
+    padding: 1.5rem;
+    border: 1px solid #D8E2F5;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    margin-top: 2rem;
+}
+
+.boton {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--acento);
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-right: 25PX;
+}
+
+.boton:hover { background: #5485b1; }
+
+p{
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: inline-block;
 }
