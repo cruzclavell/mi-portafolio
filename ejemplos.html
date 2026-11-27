@@ -1,95 +1,40 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <ol>
-        <li>Este es un elemento</li>
-        <li></li>
-        <li></li>
-    </ol>
-
-    <ul>
-        <li>Este es un elemento</li>
-        <li></li>
-        <li></li>
-    </ul>
-
-    <dl>
-        <dt>HTML</dt>
-        <dd>Estructura</dd>
-        <dt>CSS</dt>
-        <dd>Estilos</dd>
-    </dl>
-
-    <img src="media/3135768.png" alt="perfil" width="250px" height="250px" loading="lazy">
-    <hr>
-    <figure>
-        <img src="media/3135768.png" alt="perfil" width="250px" height="250px" loading="lazy">
-        <figcaption>Mi imagen de perfil</figcaption>
-    </figure>
-
-
-    <hr>
-
-    <table border="1px">
-        <caption>Listado de personas</caption>
-        <thead>
-            <th>Nombre</th>
-            <th>Apellidos</th>
-            <th>Edad</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Carlos Ernesto</td>
-                <td>Cruz Clavel</td>
-                <td>27 años</td>
-            </tr>
-            <tr>
-                <td>Carlos Ernesto</td>
-                <td>Cruz Clavel</td>
-                <td>27 años</td>
-            </tr>
-            <tr>
-                <td>Carlos Ernesto</td>
-                <td>Cruz Clavel</td>
-                <td>27 años</td>
-            </tr>
-            <tr>
-                <td>Carlos Ernesto</td>
-                <td>Cruz Clavel</td>
-                <td>27 años</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <hr>
-    <hr>
-
-
-    <video src="media/vídeo_reflexion.mp4" controls></video>
-    <audio src="media/historia_lapiz.mp3" controls></audio>
-
-<hr>
-<hr>
-<hr>
-
-<br>
-
-
-<form action="/enviar" method="get">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required></input>
-
-    <label for="correo">Correo:</label>
-    <input type="email" id="correo" name="correo" required></input>
-
-    <button type="submit">Enviar</button>
-</form>
-
-
+    <main>
+        <section id="1"><img src="media/3135768.png" alt=""></section>
+        <section id="2"><img src="media/3135768.png" alt=""></section>
+        <section id="3"><img src="media/3135768.png" alt=""></section>
+        <section id="4"><img src="media/3135768.png" alt=""></section>
+        <section id="5"><img src="media/3135768.png" alt=""></section>
+        <section id="6"><img src="media/3135768.png" alt=""></section>
+    </main>
 </body>
+
+<style>
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr;
+    }
+
+    img{
+        width: 350px;
+    }
+    section{
+        border: 3px solid black;
+        text-align: center;
+    }
+    #1{
+
+    }
+</style>
+
 </html>

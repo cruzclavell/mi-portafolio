@@ -16,6 +16,19 @@
     --acento2: #f6eded;
 }
 
+#principal {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "aside contenido"
+    "pie pie";
+    border: 3px solid black;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    gap: 6px;
+    min-height: 100vh;
+}
+
 body{
     font-family: "Playwrite FR Trad", cursive;
     font-size: 16px;
@@ -25,9 +38,10 @@ body{
 }
 
 .tarjeta img{
-    width:3050px;
-    height:350px;
+    width:auto;
+    height:auto;
     border-radius: 180px;
+    flex-shrink: 0;
 }
 
 h1, h2, h3 {
@@ -48,12 +62,13 @@ a:hover {
     color: #ab3848;
 }
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: space-between;
-    align-items: center;
     padding: 1rem 5%;
     background: var(--primario);
     border-radius: 10px 10px 0px 0px;
+    grid-area: header;
 }
 
 header h1 { 
@@ -82,7 +97,7 @@ footer {
     text-align: center;
     display: flex;
     justify-content:space-between;
-    padding: 15px;
+    padding: 10px;
 }
 
 footer a{
@@ -108,10 +123,16 @@ main table td, main table th {
     border: 1px solid black;
 }
 
+main{
+    margin-top: 20px;
+}
+
 .contenedor {
-    width: 90%;
-    max-width: 1100px; /* nunca más ancho que esto */
+    width: 95%;
     margin: 0 auto; /* centrado horizontal */
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    column-gap: 40px;
 }
 
 .tarjeta{
@@ -122,6 +143,8 @@ main table td, main table th {
     margin-bottom: 1.5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     margin-top: 2rem;
+    display: grid;
+    
 }
 
 .boton {
@@ -131,6 +154,7 @@ main table td, main table th {
     color: #FFFFFF;
     border-radius: 8px;
     font-weight: 600;
+    width: auto;
 }
 
 .boton:hover { background: #000000; }
@@ -139,14 +163,13 @@ p{
     margin-bottom: 1.5rem;
 }
 
-form {
-    display: inline-block;
-}
 
 .botones{
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    gap: 0.75rem;
+    margin-top: 1rem;
 }
 
 .botones input{
@@ -154,8 +177,9 @@ form {
 }
 
 .sobremi {
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-template-columns: 400px 1fr;
 }
 
 .habilidades ul {
@@ -177,3 +201,24 @@ form {
     color: var(--fondo2);
     margin-bottom: 15px;
 }
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+form label, form input, form select, form textarea { display: block; width: 100%; text-align: center; padding-bottom: 15px;}
+.campo-completo { grid-column: 1 / -1; } /* ocupa toda la fila */
+input, select, textarea {
+    padding: 0.75rem;
+    border: 1px solid #C9D3E6;
+    border-radius: 8px;
+    font: inherit;
+}
+input:focus, textarea:focus { outline: 2px solid var(--secundario); }
+
+aside {
+    margin-top: 1.5rem;
+    display: grid;
+}
+

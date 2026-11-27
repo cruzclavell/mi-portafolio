@@ -36,7 +36,7 @@
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="proyectos.html">PROYECTOS</a></li>
                 <li><a href="contacto.html">CONTACTANOS</a></li>
-            </ul>     
+            </ul>
         </nav>
     </Header>
     <!--Termina H1 y se agrega un salto de linea-->
@@ -58,39 +58,24 @@
                         Clavel</a></li>
                 <li>Github: <a href="https://github.com/cruzclavell" target="_blank">CRUZCLAVELL</a></li>
             </ul>
-
             <section class="tarjeta">
                 <form action="/POST" method="get">
-                    <fieldset style="text-align: center;">
-                        <legend class="destacado">Formulario de contacto</legend>
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required placeholder="Escriba su nombre completo"
                             maxlength="40">
-
-                        <br>
-
                         <label for="correo">Correo:</label>
                         <input type="email" id="correo" name="correo" required placeholder="usario@gmail.com">
-                        <br>
                         <label for="asunto"> Asunto</label>
                         <select name="asunto" id="asunto">
                             <option value="1">Oferta de empleo</option>
                             <option value="2">Solicitud de proyecto</option>
                             <option value="3">Otros</option>
                         </select>
-                        <br>
-                        <label for="comentario">Comentarios</label>
-                        <textarea name="comentario" id="comentario" cols="20" rows="5" required></textarea>
-                        <br>
-                        <input type="checkbox" name="terminos" id="terminos">Acepto los terminos y condiciones
-                        <br>
-                        <input type="radio" name="tema" id="tema1">Oferta de empleo
-                        <input type="radio" name="tema" id="tema2">Solicitud de proyecto
-                        <input type="radio" name="tema" id="tema3">Otros
-                        <br>
-                        <button type="submit">Enviar</button>
-                        <button type="reset">Reset</button>
-                    </fieldset>
+                    <label for="comentario" class="campo-completo">Comentarios</label>
+                    <textarea name="comentario" id="comentario" cols="20" rows="5" required class="campo-completo"></textarea>
+                    <input type="checkbox" name="terminos" id="terminos">Acepto los terminos y condiciones
+                    <button type="submit" class="campo-completo boton" >Enviar</button>
+                    <button type="reset" class="campo-completo boton">Reset</button>
                 </form>
             </section>
         </main>
@@ -99,8 +84,8 @@
 
     <footer>© 2026 Carlos Ernesto Cruz, Santa Ana
         <div>
-        <a href="https://github.com/cruzclavell" target="_blank">GITHUB</a>
-        <a href="mailto:ccruzclavel@gmail.com">CORREO</a>
+            <a href="https://github.com/cruzclavell" target="_blank">GITHUB</a>
+            <a href="mailto:ccruzclavel@gmail.com">CORREO</a>
         </div>
     </footer>
 
