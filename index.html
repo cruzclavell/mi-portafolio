@@ -29,14 +29,14 @@
 <body id="inicio">
     <!-- Inicia H1-->
     <Header>
-        <h1>Nombre: Carlos Ernesto Cruz Clavel </h1>
-        <hr>
+        <h1>Carlos Ernesto Cruz Clavel </h1>
         <nav>
-            <button type="button" class="boton" onclick="location.href='index.html'">INICIO</a></button>
-            <button type="button" class="boton" onclick="location.href='proyectos.html'">PROYECTOS</a></button>
-            <button type="button" class="boton" onclick="location.href='contacto.html'">CONTACTANOS</a></button>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="proyectos.html">PROYECTOS</a></li>
+                <li><a href="contacto.html">CONTACTANOS</a></li>
+            </ul>
         </nav>
-        <hr>
     </Header>
     <!--Termina H1 y se agrega un salto de linea-->
 
@@ -44,38 +44,48 @@
     <!-- Inicia main -->
     <div class="contenedor">
         <main>
-            <section class="tarjeta" id="sec1" >
-                <h3>Sobre mi</h3>
+            <section class="tarjeta sobremi centrado" id="sec1">
+                
                 <figure>
-                    <img src="img/perfil.jpg" alt="sobre mi" width="250px" height="250px" loading="lazy">
-                    <figcaption>
-                        <p>Soy una persona bastante <em>curiosa</em> me gusta poder conocer cosas nuevas, <strong>para
-                                darle alimento a mi mente</strong>. me gusta la programación
-                            ya que son muchas cosas las que se pueden crear desde 0 y de igual forma todos los lenguajes
-                            que se pueden aprender como por ejemplo <em class="destacado">C#, JAVA, JAVASCRIPT, C++,
-                                PYHTON, PHP, etc.</em> algunos más complejos que otros pero igual de
-                            <em>interesantes</em> ya al conocerlos. Soy una persona sociable y amigable, me gusta el
-                            trabajar en equipo y el poder compartir ideas con diferentes personas.
-                        </p>
-                    </figcaption>
+                    <img src="img/perfil.jpg" alt="sobre mi">
                 </figure>
-                <br>
+                <div>
+                    <h3>Sobre mi</h3>
+                    <p>Soy técnico graduado de ingeniería en sistemas en <b>(ITCA-FEPADE)</b> y actualmente tengo
+                        pausados mis estudios de Ingeniería en Desarrollo de Software (4° año)
+                        en la Universidad Católica de El Salvador <b>(UNICAES)</b>, soy una persona que le gusta conocer
+                        cosas nuevas y poder enfrentarse a retos cada vez un poco más dificiles
+                        para poder desarrollar mi mente y adiquirir el <em class="destacado">mayor conocimiento posible</em>, me gusta trabajar en
+                        equipo y poder enseñar lo que puedo a quienes realmente tienen el
+                        deseo de aprender y tengan el deseo de superarse. Me considero una persona bastante organizada
+                        para trabajar y siempre me gusta involucrar a todas las personas con
+                        las que trabajo para poder generar un ambiente más agradable.
+                        
+                    </p>
+                    <div class="botones">
+                        <input type="button" value="VER PROYECTOS" class="boton">
+                        <input type="button" value="CONTACTAME" class="boton">
+                    </div>
+                </div>
+
             </section>
             <section class="tarjeta" id="sec2">
                 <h3>Mis metas</h3>
-                <article>Mi meta principal es poder obtener la certificación ya que en el mundo laboral actualmente es
-                    muy indispensable para poder tener una oportunidad.</article>
-                <article>Y como segunda meta es poder desarrollar por mi cuenta algo funcional y que resuelva la
-                    necesidad que tenga alguna empresa o las personas, para asi darme a conocer.</article>
+                <ul>
+                    <li>Mi meta principal es poder obtener la certificación y poder obtener mi obtener mi primero empleo
+                        como desarrollador full stack</li>
+                    <li>Desarrollar por mi cuenta algo funcional y que resuelva la necesidad que tenga alguna empresa o
+                        las personas, para asi darme a conocer</li>
+                </ul>
             </section>
-            <section class="tarjeta" id="sec3">
+            <section class="tarjeta habilidades" id="sec3">
                 <h3>Habilidades</h3>
                 <ul>
-                    <li">Atención al cliente</li>
-                        <li>Base de datos</li>
-                        <li>Trabajo en equipo</li>
-                        <li>Desarrollo de software</li>
-                        <li>Organizado</li>
+                    <li>Atención al cliente</li>
+                    <li>Base de datos</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Desarrollo de software</li>
+                    <li>Organizado</li>
                 </ul>
             </section>
         </main>
@@ -84,7 +94,12 @@
     <br>
     <br>
     <br>
-    <footer>© 2026,Carlos Ernesto Cruz, Santa Ana</footer>
+    <footer>© 2026 Carlos Ernesto Cruz, Santa Ana
+        <div>
+        <a href="https://github.com/cruzclavell" target="_blank">GITHUB</a>
+        <a href="mailto:ccruzclavel@gmail.com">CORREO</a>
+        </div>
+    </footer>
 
 
 </body>
