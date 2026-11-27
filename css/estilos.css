@@ -163,7 +163,6 @@ p{
     margin-bottom: 1.5rem;
 }
 
-
 .botones{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -222,3 +221,21 @@ aside {
     display: grid;
 }
 
+.proyectos {
+    width: 95%;
+    margin: 0 auto; /* centrado horizontal */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.proyectos img {
+    width: 200px;
+    height: 200px;
+}
+
+.contacto{
+    width: 20%;
+    margin: 0 auto; /* centrado horizontal */
+    width: 95%;
+}
